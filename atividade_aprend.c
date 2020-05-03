@@ -1,18 +1,28 @@
-int main() {
-    float n;
+#include <stdlib.h>
+#include <stdio.h>
+int main (void)
+{
+int num;
+printf("digite um numero inteiro: ");
+scanf("%d",&num);
 
-    printf("Digite o valor de n");
-    scanf("%f", &n);
+if(num%2 == 0){
+{
+    num = num/2;
+    printf("Numero par dividido por 2", num);
+    printf ("\n resultado de n é: %2.f\n", num);
+}
 
-    if(n = 2,4,6,8,10){
-        n = n/2;
-    }
-    else
-    if(n = 1,3,5,7,9){
-        n = n*3+1;
-    }
+}
 
-    printf ("\n resultado de n é: %2.f\n", n);
+else{
+    if(num%2 != 0)
+{
+    num = num*3+1;
+    printf("Numero impar multiplicado por 3 mais 1", num);
+    printf ("\n resultado de n é: %2.f\n", num);
+}
 
-      return 0;
-      }
+}
+
+}

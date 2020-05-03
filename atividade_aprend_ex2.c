@@ -6,22 +6,23 @@ int num;
 printf("digite um numero inteiro: ");
 scanf("%d",&num);
 
-if(num<0){
-    if(num%2==0)//operador %
+if(num%2 == 0){
 {
-printf("NEGATIVO Par");
+    num = num/2;
+    printf("Numero par dividido por 2", num);
+    printf ("\n resultado de n é: %2.f\n", num);
 }
-else
-printf("NEGATIVO Ímpar");
+
 }
 
 else{
-    if(num%2==0)//operador %
+    if(num%2 != 0)
 {
-printf("POSITIVO Par");
+    num = num*3+1;
+    printf("Numero impar multiplicado por 3 mais 1", num);
+    printf ("\n resultado de n é: %2.f\n", num);
 }
-else
-printf("POSITIVO Ímpar");
+
 }
 
 }
