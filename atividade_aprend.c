@@ -2,25 +2,25 @@
 #include <stdio.h>
 int main (void)
 {
-int num;
+int n;
 printf("digite um numero inteiro: ");
-scanf("%d",&num);
+scanf("%d",&n);
 
-if(num%2 == 0){
+if(n%2 == 0){
 {
-    num = num/2;
-    printf("Numero par dividido por 2", num);
-    printf ("\n resultado de n é: %2.f\n", num);
+    n = n/2;
+    printf("Numero par dividido por 2", n);
+    printf ("\n resultado de n é: %2.f\n", n);
 }
 
 }
 
 else{
-    if(num%2 != 0)
+    if(n%2 != 0)
 {
-    num = num*3+1;
-    printf("Numero impar multiplicado por 3 mais 1", num);
-    printf ("\n resultado de n é: %2.f\n", num);
+    n = n*3+1;
+    printf("Numero impar multiplicado por 3 mais 1", n);
+    printf ("\n resultado de n é: %2.f\n", n);
 }
 
 }
